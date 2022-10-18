@@ -1,0 +1,49 @@
+footer {
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.4em !important;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    margin-top: 1em;
+}
+
+footer img {
+    width: 10em;
+    height: 6em;
+    margin: 0 !important;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    margin: 0 auto !important;
+}
+
+.links li {
+    margin-right: 3em;
+}
+
+.links i {
+    color: rgb(0, 65, 245);
+    font-size: 2em;
+}
+
+.links img {
+    width: 2em;
+    height: 2em;
+}
+
+@media screen and (max-width: 1024px) {
+    footer p {
+        font-size: 1em !important;
+        font-weight: normal;
+    }
+}

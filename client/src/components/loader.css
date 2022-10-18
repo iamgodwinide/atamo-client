@@ -1,0 +1,101 @@
+.loader-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 30000;
+}
+
+.loader-bg .preload-wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.loader-bg .video-bg-full {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -2;
+}
+
+.loader-bg img {
+    width: 20em;
+    height: 17em;
+}
+
+.loader-bg .animate {
+    font-size: 4em !important;
+    padding: 1em;
+    text-transform: uppercase;
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+
+
+.platform {
+    width: 50vw;
+    height: 30px;
+    border: 20px ridge rgb(61, 53, 53);
+}
+
+.loader-bg button {
+    font-size: 1em;
+    background-color: rgb(7, 2, 53);
+    color: #fff;
+    border: none;
+    padding: 1em;
+    border-radius: 10px;
+    margin: 5em 0;
+}
+
+.loader-bg i {
+    font-size: 1.5em;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: .4;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .loader-bg img {
+        width: 10em;
+        height: 7em;
+    }
+
+    .platform {
+        width: 70vw;
+        height: 20px;
+        border: 10px ridge rgb(61, 53, 53);
+    }
+
+    .loader-bg button {
+        margin: 2em 0;
+        margin-bottom: 4em;
+        font-size: .8em;
+    }
+}

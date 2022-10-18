@@ -1,0 +1,72 @@
+.lights-wrap {
+    background-color: #000000;
+    overflow: hidden;
+    height: 30px;
+    padding: 3px 0;
+    width: 100vw;
+}
+
+.light {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+.light:nth-child(odd) {
+    animation-name: glowodd;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    background-color: rgb(164, 241, 0);
+}
+
+.light:nth-child(even) {
+    animation-name: gloweven;
+    background-color: rgb(254, 254, 254);
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    ;
+}
+
+@keyframes glowodd {
+    from {
+        background-color: rgb(241, 0, 0);
+    }
+
+    to {
+        background-color: rgb(254, 254, 254);
+    }
+}
+
+@keyframes gloweven {
+    from {
+        background-color: rgb(254, 254, 254);
+    }
+
+    to {
+        background-color: rgb(241, 0, 0);
+        ;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .lights-wrap {
+        background-color: #000000;
+        overflow: hidden;
+        height: 30px;
+        padding: 10px 0;
+        width: 100vw;
+    }
+
+    .light {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin: 0 3px;
+        border-radius: 50%;
+    }
+}

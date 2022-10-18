@@ -1,0 +1,104 @@
+dl,
+ol,
+ul {
+    margin-top: 0 !important;
+    margin-bottom: 0rem !important;
+}
+
+.mint-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    width: 300px;
+}
+
+.mint-container .sold-out-text {
+    color: #DC2913;
+}
+
+.mint-container button {
+    margin: 0 .5em;
+}
+
+.mint-container h1 {
+    font-family: Haettenschweiler !important;
+    font-size: 5em !important;
+    color: #000;
+}
+
+.mint-container h3 {
+    color: #000;
+    font-family: Haettenschweiler !important;
+}
+
+
+.mintwrap {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+
+.mint-container .mint {
+    margin: 0 auto;
+    background-color: #000000;
+    color: #fff;
+    font-family: Haettenschweiler;
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 96%;
+}
+
+.mint-text {
+    font-size: 2em !important;
+    margin: 0 !important;
+    position: absolute;
+    left: 2em;
+    top: 60%;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    color: #312C9E !important;
+    text-shadow: 1px 1px 2px #000;
+    background-color: rgb(255, 247, 231);
+    padding: .4em;
+    border-radius: 10px;
+}
+
+
+.mint-text p {
+    color: red;
+}
+
+.mintwrap .crementors {
+    background-color: #312B8F !important;
+    color: #fff;
+    width: 25%;
+}
+
+.mintwrap input {
+    width: 70%;
+    font-family: Haettenschweiler;
+    font-size: 2em;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .mint-text {
+        position: unset !important;
+        font-size: 2em !important;
+        margin: 0 !important;
+    }
+
+    .mint-container {
+        flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+}

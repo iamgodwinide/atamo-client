@@ -1,0 +1,15 @@
+.marq {
+    will-change: transform;
+    transform: translate3d(-5.62025vw, 0px, 0px) scale3d(1, 1, 1) rotateX(20deg) rotateY(-5deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.image-41 {
+    min-width: 240vw;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}

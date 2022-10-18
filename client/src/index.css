@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@400;700;800&family=Poiret+One&display=swap');
+
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FB4A29;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+}
+
+h1 {
+  font-size: 7em !important;
+  font-weight: 400 !important;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5em !important;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.5em !important;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.4em !important;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  margin: 0;
+}
+
+.parallax-content {
+  height: 600px
+}
+
+section {
+  padding: 4em;
+}
+
+section .content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.showcase {
+  position: relative;
+  background-image: url('../public/ATOMO DESXTTOP 2 (1).png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.showcase .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  z-index: 1;
+  margin-top: 5em;
+}
+
+.showcase i {
+  font-size: 3em;
+  color: #fff;
+  position: absolute;
+  bottom: 3em;
+  animation-name: hover;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+
+.showcase span {
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.shadow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, .85); */
+  z-index: 1;
+}
+
+.center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.circle {
+  background: #FF66CC;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px 1px #0000001a;
+}
+
+.showcase img {
+  width: 30% !important;
+  height: 3em !important;
+}
+
+.showcase img {
+  animation: pulse-animation 2s infinite;
+  padding: 10px;
+  font-size: 4em !important;
+  border-radius: 20px;
+  position: absolute;
+  left: 10px;
+  top: 60%;
+}
+
+.showcase h4 {
+  color: rgb(253, 255, 241);
+  font-family: monospace !important;
+}
+
+.marquee {
+  background-color: rgb(164, 241, 0);
+}
+
+.marquee img {
+  height: 2em;
+}
+
+p {
+  font-size: 1.5em !important;
+  font-family: "Nunito" !important;
+  line-height: 1.5;
+  margin-bottom: 2em;
+}
+
+.about {
+  background-color: rgb(11, 10, 21);
+  margin-top: -10px;
+  padding: 0 1em !important;
+  padding-top: 3em !important;
+}
+
+.about .content {
+  display: flex;
+  align-items: center;
+}
+
+.about p {
+  text-align: start;
+  color: #fff;
+}
+
+.about .content div {
+  width: 50%;
+}
+
+
+.about .content div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .content img {
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+}
+
+
+.about h2 {
+  font-size: 3em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+
+}
+
+.about h2 h2 {
+  font-size: 1em !important;
+  display: inline;
+}
+
+
+
+.carousel-container {
+  background-color: rgb(0, 0, 0);
+  padding: 2em 0;
+  color: #fff;
+}
+
+.carousel-wrap {
+  padding: 10em auto;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+
+.carousel-container h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+}
+
+.carousel-container h3 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgb(253, 6, 6);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+  }
+}
+
+
+
+@keyframes hover {
+  from {
+    bottom: .4em;
+  }
+
+  to {
+    bottom: 1.4em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  .showcase {
+    height: 100vh;
+  }
+
+  .showcase span {
+    font-size: 1.2em;
+  }
+
+  .showcase h1 {
+    font-size: 2em !important;
+  }
+
+  .showcase i {
+    font-size: 1em;
+  }
+
+  .about {
+    padding: 1em;
+  }
+
+  .about .content {
+    flex-direction: column-reverse;
+  }
+
+  .about .content div {
+    width: 100%;
+  }
+
+  .about p {
+    font-size: 1.1em !important;
+  }
+
+  .about h2 {
+    font-size: 1.4em !important;
+  }
+
+  p {
+    font-size: 1.1em;
+    line-height: 1.2;
+    margin-bottom: 1em;
+  }
+
+  .about .content img {
+    margin: 1.5em auto;
+    width: 150px;
+    height: 150px;
+  }
+
+  .carousel-container {
+    padding-top: 2em;
+  }
+
+  .carousel-wrap {
+    margin: 0 1em;
+  }
+
+  .carousel-wrap h2 {
+    font-size: 1.4em !important;
+    margin: .7em;
+  }
+
+  .carousel-wrap h3 {
+    font-size: 1em;
+  }
+
+  .parallax-content {
+    height: 200px
+  }
+
+  .showcase img {
+    display: none;
+  }
+
+  .showcase .content {
+    margin-top: 0 !important;
+  }
+
+}

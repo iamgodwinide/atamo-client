@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d7623727.css",
+    "main.js": "/static/js/main.a222ab19.js",
+    "static/media/Atamo.mp3": "/static/media/Atamo.216a7b53ebeba04b204b.mp3",
+    "static/media/futuristic.gif": "/static/media/futuristic.6f0cacc8465296dfd92a.gif",
+    "static/media/ATOMO DESXTTOP 2 (1).png": "/static/media/ATOMO DESXTTOP 2 (1).d1fad5b00de8797c5d52.png",
+    "static/media/brand-icons.svg": "/static/media/brand-icons.6729d29753e000c17489.svg",
+    "static/media/icons.svg": "/static/media/icons.62d9dae4e0040e81c980.svg",
+    "static/media/outline-icons.svg": "/static/media/outline-icons.9c4845b4b41ef40a22fa.svg",
+    "static/media/icons.eot": "/static/media/icons.a01e3f2d6c83dc3aee17.eot",
+    "static/media/icons.ttf": "/static/media/icons.c656b8caa454ed19b9a2.ttf",
+    "static/media/brand-icons.eot": "/static/media/brand-icons.d68fa3e67dbb653a13ce.eot",
+    "static/media/brand-icons.ttf": "/static/media/brand-icons.65a2fb6d9aaa164b41a0.ttf",
+    "static/media/brand-icons.woff": "/static/media/brand-icons.cac87dc00c87a5d74711.woff",
+    "static/media/brand-icons.woff2": "/static/media/brand-icons.278156e41e0ad908cf7f.woff2",
+    "static/media/icons.woff": "/static/media/icons.425399f81e4ce7cbd967.woff",
+    "static/media/icons.woff2": "/static/media/icons.38c6d8bab26db77d8c80.woff2",
+    "static/media/outline-icons.eot": "/static/media/outline-icons.752905fa5edf21fc52a1.eot",
+    "static/media/outline-icons.ttf": "/static/media/outline-icons.5367103510b27b784827.ttf",
+    "static/media/flags.png": "/static/media/flags.99f63ae7a743f21ab308.png",
+    "static/media/outline-icons.woff": "/static/media/outline-icons.ddae9b1ba9b0b42f5880.woff",
+    "static/media/etherscan-logo-circle.png": "/static/media/etherscan-logo-circle.dab39d73699d49468b92.png",
+    "static/media/outline-icons.woff2": "/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/index.html",
+    "static/media/medium.svg": "/static/media/medium.667169a9e27c24e908b76a89c7bb09ab.svg",
+    "main.d7623727.css.map": "/static/css/main.d7623727.css.map",
+    "main.a222ab19.js.map": "/static/js/main.a222ab19.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7623727.css",
+    "static/js/main.a222ab19.js"
+  ]
+}
