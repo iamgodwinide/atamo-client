@@ -9,7 +9,7 @@ const Footer = () => {
             <p>
                 ALL RIGHTS RESERVED ATAMO ASCENSION 2022
             </p>
-            <img src='/logo.jpg' />
+            <img src='/LOGO.png' />
             <hr />
             <ul className='links'>
                 <li>
