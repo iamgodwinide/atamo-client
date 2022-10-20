@@ -3,6 +3,7 @@ import { ethers, BigNumber } from 'ethers';
 import newcontract from './Newcontract.json';
 import './mint.css'
 import { useAlert } from 'react-alert';
+import axios from 'axios'
 
 const newcontractAddress = "0x17cC48c7e5C2D76b371cC4FbB96C2F91470fEe41";
 
@@ -116,11 +117,9 @@ const MainMint = ({ accounts }) => {
 
     const generateCode = async () => {
         try {
-            fetch(`/api/code-generate/${accounts[0]}`)
-                .then(res => {
-                    const data = res.json();
-                    setCode(data.code);
-                })
+            const req = await axios.get(`/api/code-generate/${accounts[0]}`);
+            const res = await req.data;
+            setCode(res.code);
         } catch (err) {
             console.log(err);
             setTimeout(generateCode, 3000)
