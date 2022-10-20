@@ -24,20 +24,15 @@
 }
 
 .loader-bg .video-bg-full {
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -o-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: cover;
     z-index: -2;
+
 }
 
 .loader-bg img {
