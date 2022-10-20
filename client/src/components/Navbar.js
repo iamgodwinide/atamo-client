@@ -28,6 +28,9 @@ const Navbar = ({ accounts, setAccounts }) => {
                 )
 
                 }
+                <li>
+                    <i class="fa-regular fa-volume-xmark"></i>
+                </li>
                 <li className="hide-mobile">
                     <a href="#">
                         <img src={ethersan} />

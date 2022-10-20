@@ -119,9 +119,13 @@ const MainMint = ({ accounts, setAccounts }) => {
 
     {/* <h1>{totalSupply}/{maxSupply}</h1> */ }
 
+    const tweetContent = `
+    %0A%0A AtamoAscension  🚀. %0A%0A I am ascending. %0A%0A Join Me: https://atamoascension.xyz %0A%0A ⚡CODE: 98JSA0 %0A%0A Free mint: @atamoascension #atamoascension
+    `
+
 
     return (
-        <div>
+        <div className='mint-root'>
             {isConnected ? (
                 <div className='mint-container'>
                     {
@@ -130,7 +134,6 @@ const MainMint = ({ accounts, setAccounts }) => {
                             totalSupply == maxSupply
                             ? <h1 className="sold-out-text">SOLD OUT</h1>
                             : <h1>0/5555</h1>
-
                     }
                     <h3>Total supply</h3>
                     <div className="mintwrap">
@@ -139,6 +142,11 @@ const MainMint = ({ accounts, setAccounts }) => {
                         <button className='btn crementors' onClick={handleIncrement}>+</button>
                     </div>
                     <button className='btn mint' onClick={handleClick}>{mintAmount === 1 ? "Mint Free Now" : "Mint Now"}</button>
+                    <a href={`https://twitter.com/intent/tweet?text=${tweetContent}&url=https://atamoascension.xyz`}
+                        rel="no-referrer"
+                        className='btn mint tweet mt-5'>
+                        <i className='fab fa-twitter' />
+                        {" "}Tweet</a>
                 </div>
             ) : (
                 <p className='mint-text text-dark'>Please Connect <p>Metamask!</p></p>
