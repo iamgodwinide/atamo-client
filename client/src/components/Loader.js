@@ -14,7 +14,7 @@ const Loader = ({ setIsOpended, audio }) => {
 
     const handleEnded = () => {
         setIsOpended(false);
-        audio.current.play()
+        audio.current.play();
     }
 
     return (

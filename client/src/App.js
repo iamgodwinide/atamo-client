@@ -19,6 +19,8 @@ function App() {
   const [isOpened, setIsOpended] = useState(true);
   const [accounts, setAccounts] = useState([]);
   const audio = useRef();
+  const [muted, setMuted] = useState(false);
+
 
   return (
     <div id="app" className="App">
@@ -28,9 +30,9 @@ function App() {
         <Loader setIsOpended={setIsOpended} audio={audio} />
       }
       {/* audio */}
-      <audio ref={audio} hidden src={atamoSound} preload="true" />
+      <audio ref={audio} muted={muted} loop hidden src={atamoSound} preload="true" />
       {/* nav start */}
-      <Navbar accounts={accounts} setAccounts={setAccounts} />
+      <Navbar accounts={accounts} setAccounts={setAccounts} audio={audio} muted={muted} setMuted={setMuted} />
       {/* nav end */}
       {/* showcase section  start*/}
       <section className="showcase" id="home">

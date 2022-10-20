@@ -3,7 +3,7 @@ import medium from './assets/social-media-icons/medium.svg';
 import ethersan from './assets/social-media-icons/etherscan-logo-circle.png';
 import './nav.css'
 
-const Navbar = ({ accounts, setAccounts }) => {
+const Navbar = ({ accounts, setAccounts, audio, muted, setMuted }) => {
     const isConnected = Boolean(accounts[0]);
 
     async function connectAccount() {
@@ -20,17 +20,21 @@ const Navbar = ({ accounts, setAccounts }) => {
                 <img src="/LOGO.png" />
             </div>
             <ul>
-                {/*   Connect */}
-                {isConnected ? (
-                    <p>Connected</p>
-                ) : (
-                    <button color="btn btn-primary" onClick={connectAccount}>Connect</button>
-                )
+                <li
+                    onClick={() => setMuted(!muted)}
+                >
+                    {
+                        muted
+                            ? <i class="fas fa-volume-mute fa-2x text-dark"></i>
+                            : <i class="fas fa-volume-up text-dark fa-2x"></i>
+                    }
 
-                }
-                <li>
-                    <i class="fa-regular fa-volume-xmark"></i>
                 </li>
+                {/*   Connect */}
+                {!isConnected
+                    &&
+                    <button color="btn btn-primary" onClick={connectAccount}>Connect</button>
+                }
                 <li className="hide-mobile">
                     <a href="#">
                         <img src={ethersan} />

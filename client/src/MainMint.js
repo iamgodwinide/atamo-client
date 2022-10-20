@@ -6,12 +6,13 @@ import { useAlert } from 'react-alert';
 
 const newcontractAddress = "0x17cC48c7e5C2D76b371cC4FbB96C2F91470fEe41";
 
-const MainMint = ({ accounts, setAccounts }) => {
+const MainMint = ({ accounts }) => {
     const [mintAmount, setMintAmount] = useState(1);
     const [freemintAmount] = useState(1);
     const [totalSupply, settotalSupply] = useState("0");
     const [maxSupply, setMaxSupply] = useState("0");
     const [loading, setLoading] = useState(true);
+    const [code, setCode] = useState("");
 
     const isConnected = Boolean(accounts[0]);
     const alert = useAlert();
@@ -113,6 +114,24 @@ const MainMint = ({ accounts, setAccounts }) => {
     }
 
 
+    const generateCode = async () => {
+        try {
+            fetch(`/api/code-generate/${accounts[0]}`)
+                .then(res => {
+                    const data = res.json();
+                    setCode(data.code);
+                })
+        } catch (err) {
+            console.log(err);
+            setTimeout(generateCode, 3000)
+        }
+    }
+
+    useEffect(() => {
+        if (accounts[0]) generateCode();
+    }, [accounts])
+
+
     useEffect(() => {
         gettotalsupply();
     }, [])
@@ -120,7 +139,7 @@ const MainMint = ({ accounts, setAccounts }) => {
     {/* <h1>{totalSupply}/{maxSupply}</h1> */ }
 
     const tweetContent = `
-    %0A%0A AtamoAscension  🚀. %0A%0A I am ascending. %0A%0A Join Me: https://atamoascension.xyz %0A%0A ⚡CODE: 98JSA0 %0A%0A Free mint: @atamoascension #atamoascension
+    %0A%0A AtamoAscension  🚀. %0A%0A I am ascending. %0A%0A Join Me: https://atamoascension.xyz %0A%0A ⚡CODE: ${code} %0A%0A Free mint: @atamoascension #atamoascension
     `
 
 
@@ -142,8 +161,10 @@ const MainMint = ({ accounts, setAccounts }) => {
                         <button className='btn crementors' onClick={handleIncrement}>+</button>
                     </div>
                     <button className='btn mint' onClick={handleClick}>{mintAmount === 1 ? "Mint Free Now" : "Mint Now"}</button>
-                    <a href={`https://twitter.com/intent/tweet?text=${tweetContent}&url=https://atamoascension.xyz`}
-                        rel="no-referrer"
+                    <a
+                        href={`https://twitter.com/intent/tweet?text=${tweetContent}&url=https://atamoascension.xyz`}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className='btn mint tweet mt-5'>
                         <i className='fab fa-twitter' />
                         {" "}Tweet</a>
