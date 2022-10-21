@@ -42,7 +42,8 @@ const Loader = ({ setIsOpended, audio }) => {
                         color="danger"
                         value="100"
                         style={{
-                            width: "60%"
+                            width: "60%",
+                            height: "3em"
                         }}
                     />
                 </div>
