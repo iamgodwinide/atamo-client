@@ -10,7 +10,6 @@ const Footer = () => {
                 ALL RIGHTS RESERVED ATAMO ASCENSION 2022
             </p>
             <img src='/LOGO.png' />
-            <hr />
             <ul className='links'>
                 <li>
                     <a href="#">
@@ -19,7 +18,7 @@ const Footer = () => {
                 </li>
                 <li>
                     <a href="https://medium.com/@atamoascension/the-atamo-ascension-first-stop-98f52ae07f4e">
-                        <img src={medium} />
+                        <i class="fab fa-medium"></i>
                     </a>
                 </li>
                 <li>

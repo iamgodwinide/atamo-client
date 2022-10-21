@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e17b9635.css",
-    "main.js": "/static/js/main.825f5780.js",
+    "main.css": "/static/css/main.9d37ac1a.css",
+    "main.js": "/static/js/main.13d2b0c9.js",
     "static/media/Atamo.mp3": "/static/media/Atamo.216a7b53ebeba04b204b.mp3",
     "static/media/atamo dextop.png": "/static/media/atamo dextop.6d43423929860094d67d.png",
     "static/media/futuristic.gif": "/static/media/futuristic.6f0cacc8465296dfd92a.gif",
@@ -18,7 +18,9 @@
     "static/media/icons.woff2": "/static/media/icons.38c6d8bab26db77d8c80.woff2",
     "static/media/outline-icons.eot": "/static/media/outline-icons.752905fa5edf21fc52a1.eot",
     "static/media/outline-icons.ttf": "/static/media/outline-icons.5367103510b27b784827.ttf",
+    "static/media/Madrigal.woff": "/static/media/Madrigal.42fca0cf5bbffa79b236.woff",
     "static/media/flags.png": "/static/media/flags.99f63ae7a743f21ab308.png",
+    "static/media/Madrigal.woff2": "/static/media/Madrigal.8b63a0a3d46f4dbf5ed8.woff2",
     "static/media/outline-icons.woff": "/static/media/outline-icons.ddae9b1ba9b0b42f5880.woff",
     "static/media/etherscan-logo-circle.png": "/static/media/etherscan-logo-circle.dab39d73699d49468b92.png",
     "static/media/outline-icons.woff2": "/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
@@ -27,11 +29,11 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "static/media/medium.svg": "/static/media/medium.667169a9e27c24e908b76a89c7bb09ab.svg",
-    "main.e17b9635.css.map": "/static/css/main.e17b9635.css.map",
-    "main.825f5780.js.map": "/static/js/main.825f5780.js.map"
+    "main.9d37ac1a.css.map": "/static/css/main.9d37ac1a.css.map",
+    "main.13d2b0c9.js.map": "/static/js/main.13d2b0c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.e17b9635.css",
-    "static/js/main.825f5780.js"
+    "static/css/main.9d37ac1a.css",
+    "static/js/main.13d2b0c9.js"
   ]
 }

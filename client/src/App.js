@@ -57,9 +57,9 @@ function App() {
       <section className="about" name="about" id="about">
         <div className="content">
           <div>
-            <h2>The <h2>ATAMO ASCENSION</h2></h2>
+            <h2><h2>ATAMO ASCENSION</h2></h2>
             <p>
-              The Atamo Ascension is the journey of revolutionary sisters who must overcome two types of struggles – personal struggles and the environmental struggles of a decaying futuristic society – to reach a better life by climbing up the Ethereum Blockchain. Will they make it? Reader, find out.
+              Atamo Ascension is the journey of revolutionary sisters who must overcome two types of struggles – personal struggles and the environmental struggles of a decaying futuristic society – to reach a better life by climbing up the Ethereum Blockchain. Will they make it? Reader, find out.
             </p>
 
           </div>

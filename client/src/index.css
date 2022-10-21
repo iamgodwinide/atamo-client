@@ -6,10 +6,19 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Encanto';
+  src: url('./fonts/Madrigal.woff2') format('woff2'),
+    url('./fonts/Madrigal.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  font-family: Impact, Encanto !important;
 }
 
 body::-webkit-scrollbar {
@@ -32,25 +41,25 @@ body::-webkit-scrollbar-thumb {
 h1 {
   font-size: 7em !important;
   font-weight: 400 !important;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  font-family: Encanto !important;
   margin: 0;
 }
 
 h2 {
   font-size: 2.5em !important;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  font-family: Encanto !important;
   margin: 0;
 }
 
 h3 {
   font-size: 1.5em !important;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  font-family: Encanto !important;
   margin: 0;
 }
 
 h4 {
   font-size: 1.4em !important;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  font-family: Encanto !important;
   margin: 0;
 }
 
@@ -97,7 +106,6 @@ section .content {
 .showcase span {
   font-size: 1.6em;
   font-weight: bold;
-  font-family: monospace;
 }
 
 .shadow {
@@ -144,23 +152,16 @@ section .content {
   font-family: monospace !important;
 }
 
-.marquee {
-  background-color: rgb(164, 241, 0);
-}
-
-.marquee img {
-  height: 2em;
-}
 
 p {
   font-size: 1.5em !important;
-  font-family: "Nunito" !important;
+  font-family: Encanto !important;
   line-height: 1.5;
   margin-bottom: 2em;
 }
 
 .about {
-  background-color: rgb(11, 10, 21);
+  background-color: #181818;
   margin-top: -10px;
   padding: 0 1em !important;
   padding-top: 3em !important;
@@ -174,6 +175,7 @@ p {
 .about p {
   text-align: start;
   color: #fff;
+  font-family: Encanto !important;
 }
 
 .about .content div {
@@ -196,10 +198,11 @@ p {
 
 .about h2 {
   font-size: 3em;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  font-family: Encanto !important;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: rgb(255, 255, 255);
+  color: #D62B16;
 
 }
 
@@ -211,7 +214,7 @@ p {
 
 
 .carousel-container {
-  background-color: rgb(0, 0, 0);
+  background-color: #181818;
   padding: 2em 0;
   color: #fff;
 }
@@ -227,11 +230,11 @@ p {
 
 
 .carousel-container h2 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  font-family: Encanto !important;
 }
 
 .carousel-container h3 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  font-family: Encanto !important;
 }
 
 @keyframes pulse-animation {
@@ -256,7 +259,7 @@ p {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
 
   h1 {
     font-size: 2em;
@@ -270,8 +273,13 @@ p {
     font-size: 1.1em;
   }
 
+  section {
+    padding: 0 !important;
+  }
+
   .showcase {
     height: 100vh;
+    width: 100%;
   }
 
   .showcase span {

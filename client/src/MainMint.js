@@ -4,10 +4,11 @@ import newcontract from './Newcontract.json';
 import './mint.css'
 import { useAlert } from 'react-alert';
 import axios from 'axios'
+import { Progress } from 'reactstrap'
 
 const newcontractAddress = "0x17cC48c7e5C2D76b371cC4FbB96C2F91470fEe41";
 
-const MainMint = ({ accounts }) => {
+const MainMint = ({ accounts, setAccounts }) => {
     const [mintAmount, setMintAmount] = useState(1);
     const [freemintAmount] = useState(1);
     const [totalSupply, settotalSupply] = useState("0");
@@ -126,16 +127,32 @@ const MainMint = ({ accounts }) => {
         }
     }
 
+    // connect button
+    async function connectAccount() {
+        if (window.ethereum) {
+            const accounts = await window.ethereum.request({
+                method: "eth_requestAccounts",
+            });
+            setAccounts(accounts);
+        }
+    }
+
+    async function disconnectAccount() {
+        setAccounts([]);
+    }
+
     useEffect(() => {
         if (accounts[0]) generateCode();
     }, [accounts])
 
 
     useEffect(() => {
-        gettotalsupply();
-    }, [])
+        if (accounts[0]) gettotalsupply();
+    }, [accounts])
 
     {/* <h1>{totalSupply}/{maxSupply}</h1> */ }
+    {/* <h1>0/5555</h1> */ }
+
 
     const tweetContent = `
     %0A%0A AtamoAscension  🚀. %0A%0A I am ascending. %0A%0A Join Me: https://atamoascension.xyz %0A%0A ⚡CODE: ${code} %0A%0A Free mint: @atamoascension #atamoascension
@@ -144,34 +161,57 @@ const MainMint = ({ accounts }) => {
 
     return (
         <div className='mint-root'>
-            {isConnected ? (
-                <div className='mint-container'>
-                    {
-                        loading === false
-                            &&
-                            totalSupply == maxSupply
-                            ? <h1 className="sold-out-text">SOLD OUT</h1>
-                            : <h1>0/5555</h1>
-                    }
-                    <h3>Total supply</h3>
-                    <div className="mintwrap">
-                        <button className='btn crementors' onClick={handleDecrement}>-</button>
-                        <input className="form-control" type='number' value={mintAmount} />
-                        <button className='btn crementors' onClick={handleIncrement}>+</button>
+            {
+                isConnected
+                    ? <div className='mint-container'>
+                        {
+                            loading === false
+                                &&
+                                totalSupply == maxSupply
+                                ? <h1 className="sold-out-text">SOLD OUT</h1>
+                                :
+                                <>
+                                    <Progress
+                                        animated
+                                        className="my-3"
+                                        color='danger'
+                                        value={100}
+                                    >
+                                    </Progress>
+                                    <div className='prog-info'>
+                                        <h3>Total supply: 0</h3>
+                                        <h3>Max supply: 5555</h3>
+                                    </div>
+                                </>
+
+                        }
+                        <div className="mintwrap">
+                            <button className='btn crementors' onClick={handleDecrement}>-</button>
+                            <input className="form-control" type='number' value={mintAmount} />
+                            <button className='btn crementors' onClick={handleIncrement}>+</button>
+                        </div>
+                        <button className='btn mint' onClick={handleClick}>{mintAmount === 1 ? "Mint Free Now" : "Mint Now"}</button>
+                        <div className='small-btns'>
+                            <button color="btn" onClick={disconnectAccount}>
+                                <i class="fas fa-unlink"></i> {" "}disconnect</button>
+                            <a
+                                href={`https://twitter.com/intent/tweet?text=${tweetContent}&url=https://atamoascension.xyz`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className='btn tweet'>
+                                <i className='fab fa-twitter' />
+                                {" "}Tweet</a>
+                        </div>
+
+
                     </div>
-                    <button className='btn mint' onClick={handleClick}>{mintAmount === 1 ? "Mint Free Now" : "Mint Now"}</button>
-                    <a
-                        href={`https://twitter.com/intent/tweet?text=${tweetContent}&url=https://atamoascension.xyz`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className='btn mint tweet mt-5'>
-                        <i className='fab fa-twitter' />
-                        {" "}Tweet</a>
-                </div>
-            ) : (
-                <p className='mint-text text-dark'>Please Connect <p>Metamask!</p></p>
-            )
-            }
+                    : <div className="connect-btn-wrap">
+                        <button color="btn btn-primary" onClick={connectAccount}>
+                            <i class="fas fa-link"></i>
+                            <span></span>
+                            {" "}Connect To Ascend{" "}
+                        </button>
+                    </div>}
         </div>
     )
 };
