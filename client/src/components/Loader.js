@@ -23,6 +23,9 @@ const Loader = ({ setIsOpended, audio }) => {
         window.addEventListener('load', function () {
             setLoading(false);
         })
+        setTimeout(() => {
+            setLoading(false);
+        }, 5000)
     }, [])
 
     return (
