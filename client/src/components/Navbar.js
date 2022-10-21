@@ -8,9 +8,6 @@ const Navbar = ({ audio, muted, setMuted }) => {
 
     return (
         <nav>
-            <div className='logo-wrap'>
-                <img src="/LOGO.png" />
-            </div>
             <ul>
                 <li
                 >

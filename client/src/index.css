@@ -80,7 +80,7 @@ section .content {
   position: relative;
   background: url('../public/atamo dextop.png');
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
@@ -206,7 +206,7 @@ p {
 
 .about .content img {
   margin: 0 auto;
-  width: 500px;
+  width: 300px;
 }
 
 

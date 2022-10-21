@@ -5,14 +5,8 @@ nav {
     position: absolute;
     left: 0;
     width: 100vw;
-    padding: .5em;
+    padding: 1em;
     z-index: 4;
-}
-
-@media screen and (min-width: 850px) {
-    nav {
-        top: -5%;
-    }
 }
 
 nav ul {
@@ -32,7 +26,6 @@ nav .speaker-wrap {
 nav .speaker-wrap i {
     width: 20%;
 }
-
 
 nav ul i {
     cursor: pointer;

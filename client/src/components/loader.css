@@ -11,6 +11,10 @@
     z-index: 30000;
 }
 
+.loader-bg .progress-bar-animated {
+    animation: .2s linear infinite progress-bar-stripes !important;
+}
+
 .loader-bg .preload-wrap {
     position: fixed;
     width: 100%;
