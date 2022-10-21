@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d37ac1a.css",
-    "main.js": "/static/js/main.40ac6f36.js",
+    "main.css": "/static/css/main.b37accbf.css",
+    "main.js": "/static/js/main.f28df0c1.js",
     "static/media/Atamo.mp3": "/static/media/Atamo.216a7b53ebeba04b204b.mp3",
+    "static/media/Green girl_4.mov": "/static/media/Green girl_4.5069b2d449b1000e5a4c.mov",
     "static/media/atamo dextop.png": "/static/media/atamo dextop.6d43423929860094d67d.png",
     "static/media/futuristic.gif": "/static/media/futuristic.6f0cacc8465296dfd92a.gif",
+    "static/media/angel.png": "/static/media/angel.cb60e2893b0167b7effb.png",
     "static/media/brand-icons.svg": "/static/media/brand-icons.6729d29753e000c17489.svg",
     "static/media/icons.svg": "/static/media/icons.62d9dae4e0040e81c980.svg",
     "static/media/outline-icons.svg": "/static/media/outline-icons.9c4845b4b41ef40a22fa.svg",
@@ -29,11 +31,11 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "static/media/medium.svg": "/static/media/medium.667169a9e27c24e908b76a89c7bb09ab.svg",
-    "main.9d37ac1a.css.map": "/static/css/main.9d37ac1a.css.map",
-    "main.40ac6f36.js.map": "/static/js/main.40ac6f36.js.map"
+    "main.b37accbf.css.map": "/static/css/main.b37accbf.css.map",
+    "main.f28df0c1.js.map": "/static/js/main.f28df0c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d37ac1a.css",
-    "static/js/main.40ac6f36.js"
+    "static/css/main.b37accbf.css",
+    "static/js/main.f28df0c1.js"
   ]
 }

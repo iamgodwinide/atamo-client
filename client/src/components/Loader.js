@@ -1,8 +1,10 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import { Progress } from 'reactstrap';
 import './loader.css'
 
 const Loader = ({ setIsOpended, audio }) => {
     const videoplayer = useRef();
+    const [loading, setLoading] = useState(true);
 
 
     const handleClick = () => {
@@ -17,6 +19,12 @@ const Loader = ({ setIsOpended, audio }) => {
         audio.current.play();
     }
 
+    useEffect(() => {
+        window.addEventListener('load', function () {
+            setLoading(false);
+        })
+    }, [])
+
     return (
         <div className={"loader-bg"}>
             <video onEnded={handleEnded} ref={videoplayer} className="video-bg-full" src='/Elevator elevated_3.mp4' preload='true' />
@@ -24,6 +32,21 @@ const Loader = ({ setIsOpended, audio }) => {
                 <h1 onClick={handleClick} className='animate'>
                     Click to ascend</h1>
             </div>
+            {
+                loading
+                &&
+                <div className='loading-wrap'>
+                    <Progress
+                        animated
+                        className="my-3"
+                        color="danger"
+                        value="100"
+                        style={{
+                            width: "60%"
+                        }}
+                    />
+                </div>
+            }
         </div>
 
     )

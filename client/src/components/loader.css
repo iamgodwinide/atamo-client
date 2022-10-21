@@ -52,6 +52,17 @@
     cursor: pointer;
 }
 
+.loading-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .platform {
     width: 50vw;

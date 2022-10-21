@@ -21,13 +21,13 @@ const responsive = {
     }
 };
 const images = [
-    "/atamo export fine 1.png",
-    "/atamo export fine 2.png",
+    "/atamo export fine 7.png",
     "/atamo export fine 3.png",
     "/atamo export fine 4.png",
-    "/atamo export fine 5.png",
     "/atamo export fine 6.png",
-    "/atamo export fine 7.png",
+    "/atamo export fine 1.png",
+    "/atamo export fine 2.png",
+    "/atamo export fine 5.png",
     "/atamo export fine 8.png",
 ];
 

@@ -1,23 +1,25 @@
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.426);
-    top: 0;
     left: 0;
     width: 100vw;
     padding: .5em;
     z-index: 4;
 }
 
+@media screen and (min-width: 850px) {
+    nav {
+        top: -5%;
+    }
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    width: 60%;
-    padding-right: 1em;
 }
 
 nav .speaker-wrap {
@@ -27,6 +29,9 @@ nav .speaker-wrap {
     width: 10em;
 }
 
+nav .speaker-wrap i {
+    width: 20%;
+}
 
 
 nav ul i {
@@ -74,7 +79,8 @@ nav ul button {
 
 .logo-wrap img {
     width: 12em !important;
-    height: 6em;
+    height: 12em;
+    margin: 0 !important;
 
 }
 
@@ -101,7 +107,7 @@ nav ul button {
     }
 
     nav .speaker-wrap {
-        width: 100%;
+        width: 90%;
         justify-content: space-between;
     }
 
@@ -110,8 +116,8 @@ nav ul button {
     }
 
     nav .logo-wrap img {
-        width: 4em;
-        height: 4em;
+        width: 7em;
+        height: 10em;
     }
 
 }

@@ -9,7 +9,7 @@ const Footer = () => {
             <ul className='links'>
                 <li>
                     <a href="#">
-                        <img src={"'./etherscan-logo-circle.png"} />
+                        <img src={require("./assets/social-media-icons/etherscan-logo-circle.png")} />
                     </a>
                 </li>
                 <li>

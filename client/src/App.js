@@ -12,6 +12,7 @@ import Loader from "./components/Loader";
 import { useRef, useState } from "react";
 import MainMint from "./MainMint";
 import atamoSound from './components/assets/sound/Atamo.mp3';
+import BgVideo from "./components/BgVideo";
 
 
 
@@ -38,7 +39,10 @@ function App() {
       <section className="showcase" id="home">
         <MainMint accounts={accounts} setAccounts={setAccounts} />
         <div className="content">
-          {/* <img src="/logo.png" /> */}
+          <img src={require("./components/assets/images/angel.png")} />
+          <img src={require("./components/assets/images/angel.png")} />
+          <img src={require("./components/assets/images/angel.png")} />
+          <img src={require("./components/assets/images/angel.png")} />
         </div>
       </section>
       {/* showcase section end */}
@@ -88,6 +92,9 @@ function App() {
         <CarouselCompnent />
       </div>
       {/* carousel end */}
+      {/* video start */}
+      <BgVideo />
+      {/* video end */}
       {/* faq start */}
       <FAQ />
       {/* faq end */}

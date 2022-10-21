@@ -133,18 +133,33 @@ section .content {
 }
 
 .showcase img {
-  width: 30% !important;
-  height: 3em !important;
+  width: 5em !important;
+  position: absolute;
+  left: 10%;
+  bottom: -10%;
+  opacity: .05;
+  animation-name: ascend;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
 }
 
-.showcase img {
-  animation: pulse-animation 2s infinite;
-  padding: 10px;
-  font-size: 4em !important;
-  border-radius: 20px;
-  position: absolute;
-  left: 10px;
-  top: 60%;
+.showcase img:nth-child(2) {
+  animation-delay: 3s;
+  animation-duration: 9s;
+  left: 15%;
+}
+
+.showcase img:nth-child(3) {
+  animation-delay: 2s;
+  animation-duration: 7s;
+  left: 20%;
+}
+
+.showcase img:nth-child(4) {
+  animation-delay: 5s;
+  animation-duration: 12s;
+  left: 6%;
 }
 
 .showcase h4 {
@@ -192,7 +207,6 @@ p {
 .about .content img {
   margin: 0 auto;
   width: 500px;
-  height: 500px;
 }
 
 
@@ -214,8 +228,10 @@ p {
 
 
 .carousel-container {
-  background-color: #181818;
+  /* background-color: #181818; */
+  background-color: #111d0f;
   padding: 2em 0;
+  padding-bottom: 0;
   color: #fff;
 }
 
@@ -237,13 +253,13 @@ p {
   font-family: Encanto !important;
 }
 
-@keyframes pulse-animation {
+@keyframes ascend {
   0% {
-    box-shadow: 0 0 0 0px rgb(253, 6, 6);
+    bottom: -10%;
   }
 
   100% {
-    box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+    bottom: 110%;
   }
 }
 
