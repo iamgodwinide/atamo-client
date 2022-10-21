@@ -28,7 +28,7 @@ const Footer = () => {
                 </li>
                 <li>
                     <a href='/'>
-                        <img src={require("./assets/social-media-icons/Logomark-Blue.png")} />
+                        <img src={"https://storage.googleapis.com/opensea-static/Logomark/Logomark-Blue.svg"} />
                     </a>
                 </li>
             </ul>
