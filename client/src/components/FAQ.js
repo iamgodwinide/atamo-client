@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from 'reactstrap'
 import './faq.css'
+import './footer.css'
+
 
 const FAQ = () => {
 

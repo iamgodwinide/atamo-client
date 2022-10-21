@@ -1,7 +1,3 @@
-import React from 'react'
-import './footer.css'
-import medium from './assets/social-media-icons/medium.svg';
-import ethersan from './assets/social-media-icons/etherscan-logo-circle.png';
 
 const Footer = () => {
     return (
@@ -13,7 +9,7 @@ const Footer = () => {
             <ul className='links'>
                 <li>
                     <a href="#">
-                        <img src={ethersan} />
+                        <img src={"'./etherscan-logo-circle.png"} />
                     </a>
                 </li>
                 <li>
