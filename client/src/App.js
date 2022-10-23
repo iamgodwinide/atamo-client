@@ -26,7 +26,7 @@ function App() {
   return (
     <div id="app" className="App">
       {
-        !isOpened
+        isOpened
         &&
         <Loader setIsOpended={setIsOpended} audio={audio} />
       }
