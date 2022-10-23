@@ -190,14 +190,6 @@ a.tweet {
 
 @media screen and (max-width: 1023px) {
 
-    .showcase {
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-size: 100% 100%;
-        background-position: top;
-    }
-
     .mint-text {
         position: unset !important;
         font-size: 2em !important;

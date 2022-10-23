@@ -47,16 +47,6 @@ function App() {
       </section>
       {/* showcase section end */}
       <Lights length={100} />
-      {/* <marquee
-        loop
-        className="marquee"
-      >
-        {
-          Array(200).fill(0).map((_, key) => (
-            <img key={key} src="https://www.gangsterallstar.com/images/Group-6325_1.svg" />
-          ))
-        }
-      </marquee> */}
       {/* about section  start*/}
       <section className="about" name="about" id="about">
         <div className="content">

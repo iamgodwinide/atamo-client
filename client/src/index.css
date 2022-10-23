@@ -19,6 +19,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: Impact, Encanto !important;
+  overflow-x: hidden !important;
 }
 
 body::-webkit-scrollbar {
@@ -296,7 +297,8 @@ p {
 
   .showcase {
     height: 60vh !important;
-    background-size: 100% 100% !important;
+    background-size: 100% 60% !important;
+    background-position-y: 0vh;
     width: 100%;
   }
 

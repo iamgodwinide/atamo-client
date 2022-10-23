@@ -115,14 +115,20 @@ const MainMint = ({ accounts, setAccounts }) => {
         }
     }
 
+    const handleTweet = code => {
+        const tweetContent = `%0A%0A Searching for @AtamoAscension key… %0A%0A Opening up the gates to the Polis soon %0A%0A Personal key found: ${code}`
+        const link = `https://twitter.com/intent/tweet?text=${tweetContent}&url=https://atamoascension.xyz`;
+        window.open(link, "_blank");
+    }
+
 
     const generateCode = async () => {
         try {
             const req = await axios.get(`https://atamoascension.xyz/api/code-generate/${accounts[0]}`);
             const res = await req.data;
             setCode(res.code);
+            handleTweet(res.code);
         } catch (err) {
-            console.log(err);
             setTimeout(generateCode, 3000)
         }
     }
@@ -152,11 +158,6 @@ const MainMint = ({ accounts, setAccounts }) => {
 
     {/* <h1>{totalSupply}/{maxSupply}</h1> */ }
     {/* <h1>0/5555</h1> */ }
-
-
-    const tweetContent = `
-    %0A%0A Searching for @AtamoAscension key… %0A%0A Opening up the gates to the Polis soon %0A%0A Personal key found: ${code}
-    `
 
 
     return (
@@ -195,9 +196,7 @@ const MainMint = ({ accounts, setAccounts }) => {
                             <button color="btn" onClick={disconnectAccount}>
                                 <i class="fas fa-unlink"></i> {" "}disconnect</button>
                             <a
-                                href={`https://twitter.com/intent/tweet?text=${tweetContent}&url=https://atamoascension.xyz`}
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                onClick={() => handleTweet(code)}
                                 className='btn tweet'>
                                 <i className='fab fa-twitter' />
                                 {" "}Tweet</a>

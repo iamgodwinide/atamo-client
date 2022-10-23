@@ -84,7 +84,7 @@ nav ul button {
     }
 
     nav ul {
-        min-width: 100%;
+        min-width: 100vw;
         justify-content: center;
         position: relative;
 
@@ -100,10 +100,10 @@ nav ul button {
     }
 
     nav .speaker-wrap {
-        width: 50%;
         justify-content: space-between;
-        margin-left: 2em;
-        margin-top: 2em;
+        position: absolute;
+        left: 3em;
+        top: 2em;
     }
 
     nav .speaker-wrap i {
