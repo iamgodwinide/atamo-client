@@ -4,7 +4,7 @@ import './bg-video.css'
 const BgVideo = () => {
     return (
         <div className='bg-video'>
-            <video src={require("./assets/videos/Green girl_4.mov")} preload autoPlay muted loop />
+            <video src={"/Green girl_4.mp4"} preload autoPlay muted loop />
         </div>
     )
 }

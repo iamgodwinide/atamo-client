@@ -291,10 +291,12 @@ p {
 
   section {
     padding: 0 !important;
+    min-height: 60vh !important;
   }
 
   .showcase {
-    height: 100vh;
+    height: 60vh !important;
+    background-size: 100% 100% !important;
     width: 100%;
   }
 

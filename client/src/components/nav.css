@@ -100,8 +100,10 @@ nav ul button {
     }
 
     nav .speaker-wrap {
-        width: 90%;
+        width: 50%;
         justify-content: space-between;
+        margin-left: 2em;
+        margin-top: 2em;
     }
 
     nav .speaker-wrap i {

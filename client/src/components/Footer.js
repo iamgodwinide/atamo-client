@@ -5,26 +5,26 @@ const Footer = () => {
             <p>
                 ALL RIGHTS RESERVED ATAMO ASCENSION 2022
             </p>
-            <img src='/LOGO.png' />
+            <img src='/LOGO 2.png' />
             <ul className='links'>
                 <li>
                     <a href="#">
-                        <img src={require("./assets/social-media-icons/etherscan-logo-circle.png")} />
+                        <img src={"/etherscan.svg"} />
                     </a>
                 </li>
                 <li>
                     <a href="https://medium.com/@atamoascension/the-atamo-ascension-first-stop-98f52ae07f4e">
-                        <i class="fab fa-medium"></i>
+                        <i class="fab fa-medium text-white"></i>
                     </a>
                 </li>
                 <li>
                     <a href='/'>
-                        <i className='fab fa-twitter' />
+                        <i className='fab fa-twitter text-white' />
                     </a>
                 </li>
                 <li>
                     <a href='/'>
-                        <img src={"https://storage.googleapis.com/opensea-static/Logomark/Logomark-Blue.svg"} />
+                        <img src={"/opensea.svg"} className="opensea" />
                     </a>
                 </li>
             </ul>

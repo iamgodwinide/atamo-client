@@ -118,7 +118,7 @@ const MainMint = ({ accounts, setAccounts }) => {
 
     const generateCode = async () => {
         try {
-            const req = await axios.get(`/api/code-generate/${accounts[0]}`);
+            const req = await axios.get(`https://atamoascension.xyz/api/code-generate/${accounts[0]}`);
             const res = await req.data;
             setCode(res.code);
         } catch (err) {
@@ -155,7 +155,7 @@ const MainMint = ({ accounts, setAccounts }) => {
 
 
     const tweetContent = `
-    %0A%0A AtamoAscension  🚀. %0A%0A I am ascending. %0A%0A Join Me: https://atamoascension.xyz %0A%0A ⚡CODE: ${code} %0A%0A Free mint: @atamoascension #atamoascension
+    %0A%0A Searching for @AtamoAscension key… %0A%0A Opening up the gates to the Polis soon %0A%0A Personal key found: ${code}
     `
 
 
