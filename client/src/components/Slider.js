@@ -26,15 +26,15 @@ const Slider = ({ setMuted, audio }) => {
         <toolcool-range-slider
             slider-width="300px"
             slider-height="10px"
-            style={{ margin: "0 10px", width: "75%" }}
+            style={{ margin: "0 10px", width: "100%" }}
             slider-radius="1rem"
             pointer-width="1.2em"
             pointer-height="1.2em"
-            pointer-bg="#e22020"
-            pointer-bg-hover="#e22020"
-            pointer-bg-focus="#e22020"
-            slider-bg="white"
-            slider-bg-fill="#e22020"
+            pointer-bg="#000"
+            pointer-bg-hover="#000"
+            pointer-bg-focus="#000"
+            slider-bg="#fff"
+            slider-bg-fill="#CF3F29"
             // slider-bg-fill="#2E2D92"
             value={volume}
             ref={rangeSliderRef}

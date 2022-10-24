@@ -3,6 +3,7 @@ import "react-multi-carousel/lib/styles.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App2.css'
 import Navbar from "./components/Navbar2";
+import Footer from './components/Footer'
 import Loader from "./components/Loader";
 import { useRef, useState } from "react";
 import MainMint from "./MainMint2";
@@ -39,6 +40,7 @@ function App() {
                     <img src={require("./components/assets/images/angel.png")} />
                 </div>
             </section>
+            <Footer />
             {/* showcase section end */}
         </div >
     );

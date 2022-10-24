@@ -16,18 +16,15 @@
 body {
     margin: 0;
     font-family: Impact, Encanto !important;
-    overflow: hidden !important;
-    height: 100vh !important;
-    height: 100vw !important;
-    overflow-y: hidden !important;
+    overflow-x: hidden !important;
 }
 
 .showcase {
-    position: absolute !important;
+    /* position: absolute !important; */
     top: 0;
     left: 0;
-    height: 100% !important;
-    width: 100% !important;
+    height: 100vh !important;
+    width: 100vw !important;
     background: url("../public/falling gif.gif");
     background-size: cover !important;
     display: flex;
