@@ -1,3 +1,4 @@
+import './index.css';
 import CarouselCompnent from "./components/Carousel";
 import "semantic-ui-css/semantic.min.css";
 import "react-multi-carousel/lib/styles.css";

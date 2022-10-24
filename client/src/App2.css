@@ -1,0 +1,49 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Encanto';
+    src: url('./fonts/Madrigal.woff2') format('woff2'),
+        url('./fonts/Madrigal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    font-family: Impact, Encanto !important;
+    overflow: hidden !important;
+    height: 100vh !important;
+    height: 100vw !important;
+    overflow-y: hidden !important;
+}
+
+.showcase {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    height: 100% !important;
+    width: 100% !important;
+    background: url("../public/falling gif.gif");
+    background-size: cover !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width:1023px) {
+    .showcase {
+        background-position: unset !important;
+        background-attachment: unset !important;
+        background-position: 70% 100% !important;
+        background-repeat: no-repeat;
+        height: 100vh !important;
+        width: 100vw !important;
+    }
+}
