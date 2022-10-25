@@ -63,7 +63,7 @@ nav .speaker-wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
+    width: 100%;
     margin-left: 3em;
 }
 
@@ -73,40 +73,34 @@ nav ul p {
 }
 
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 850px) {
     nav {
         width: 100vw !important;
-        flex-direction: column-reverse;
-        justify-content: flex-start !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
         align-items: flex-start !important;
         box-shadow: unset !important;
         overflow-x: hidden;
-        padding-bottom: 2em;
     }
 
     nav ul {
-        width: 100vw;
-        position: relative;
-        margin: 0 !important;
-    }
-
-    nav ul:nth-child(2) {
-        display: none;
-    }
-
-    nav ul li {
-        font-size: 1.1em;
-    }
-
-    nav ul a {
-        margin: 0 .5em;
+        min-width: 80 !important;
+        width: unset !important;
+        justify-content: space-between;
     }
 
     nav .speaker-wrap {
-        position: relative !important;
-        margin: 0 !important;
-        left: 4em;
-        top: 1em;
+        width: 35vw !important;
+        margin-left: -2em !important;
+    }
+
+    nav .speaker-wrap i {
+        font-size: 1.3em !important;
+    }
+
+    nav ul.links {
+        width: 30vw;
+        margin-right: -2em !important;
     }
 
 
