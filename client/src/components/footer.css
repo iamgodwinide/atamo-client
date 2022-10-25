@@ -10,6 +10,7 @@ footer p {
     color: rgb(255, 255, 255);
     font-weight: bolder;
     margin-top: 1em;
+    margin-bottom: -.7em;
 }
 
 footer img {

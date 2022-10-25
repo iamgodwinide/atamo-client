@@ -7,11 +7,11 @@ const Footer = () => {
             </p>
             <img src='/LOGO 2.png' />
             <ul className='links'>
-                <li>
+                {/* <li>
                     <a href="#">
                         <img src={"/etherscan.svg"} />
                     </a>
-                </li>
+                </li> */}
                 <li>
                     <a href="https://medium.com/@atamoascension/the-atamo-ascension-first-stop-98f52ae07f4e">
                         <i class="fab fa-medium text-white"></i>
@@ -22,11 +22,11 @@ const Footer = () => {
                         <i className='fab fa-twitter text-white' />
                     </a>
                 </li>
-                <li>
+                {/* <li>
                     <a href='/'>
                         <img src={"/opensea.svg"} className="opensea" />
                     </a>
-                </li>
+                </li> */}
             </ul>
         </footer>
     )

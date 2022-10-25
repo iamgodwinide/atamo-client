@@ -1,11 +1,11 @@
 nav {
     position: absolute;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between !important;
     align-items: center;
     left: 0;
     width: 100vw;
-    padding: 1em;
+    padding: 1em 0;
     z-index: 4;
     font-family: Impact, Encanto !important;
 }
@@ -13,8 +13,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: flex-end !important;
 }
 
 nav ul li {
@@ -26,6 +25,38 @@ nav ul a {
     margin: 0 1em;
     color: #fff;
     text-transform: uppercase;
+    text-decoration: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+footer ul.links {
+    margin-top: -.7em !important;
+}
+
+
+ul.links i {
+    color: rgb(255, 255, 255) !important;
+    background-color: #dc4f2f;
+    border-radius: 50%;
+    font-size: 1.5em !important;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+ul.links img {
+    background-color: #dc4f2f;
+    border-radius: 50%;
+    width: 2.6em !important;
+    height: 2.6em !important;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    padding: 6px;
 }
 
 nav .speaker-wrap {
@@ -59,6 +90,10 @@ nav ul p {
         margin: 0 !important;
     }
 
+    nav ul:nth-child(2) {
+        display: none;
+    }
+
     nav ul li {
         font-size: 1.1em;
     }
@@ -69,9 +104,8 @@ nav ul p {
 
     nav .speaker-wrap {
         position: relative !important;
-        width: 50vw;
         margin: 0 !important;
-        left: 0;
+        left: 4em;
         top: 1em;
     }
 

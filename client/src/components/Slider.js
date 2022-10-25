@@ -30,11 +30,11 @@ const Slider = ({ setMuted, audio }) => {
             slider-radius="1rem"
             pointer-width="1.2em"
             pointer-height="1.2em"
-            pointer-bg="#000"
-            pointer-bg-hover="#000"
-            pointer-bg-focus="#000"
+            pointer-bg="#181818"
+            pointer-bg-hover="#181818"
+            pointer-bg-focus="#181818"
             slider-bg="#fff"
-            slider-bg-fill="#CF3F29"
+            slider-bg-fill="#181818"
             // slider-bg-fill="#2E2D92"
             value={volume}
             ref={rangeSliderRef}

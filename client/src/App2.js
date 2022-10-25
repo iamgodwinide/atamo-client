@@ -33,12 +33,6 @@ function App() {
             {/* showcase section  start*/}
             <section className="showcase">
                 <MainMint accounts={accounts} setAccounts={setAccounts} />
-                <div className="content">
-                    <img src={require("./components/assets/images/angel.png")} />
-                    <img src={require("./components/assets/images/angel.png")} />
-                    <img src={require("./components/assets/images/angel.png")} />
-                    <img src={require("./components/assets/images/angel.png")} />
-                </div>
             </section>
             <Footer />
             {/* showcase section end */}
