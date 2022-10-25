@@ -19,7 +19,7 @@ const MainMint = () => {
                 <button color="btn btn-primary" onClick={connectAccount}>
                     <i class="fas fa-link"></i>
                     <span></span>
-                    {" "}Connect To Ascend{" "}
+                    {" "}Click To Ascend{" "}
                 </button>
             </div>
         </div>
