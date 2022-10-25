@@ -32,6 +32,7 @@ function App() {
             {/* nav end */}
             {/* showcase section  start*/}
             <section className="showcase">
+                <video autoPlay loop muted src="/Float_Loop.mp4" />
                 <MainMint accounts={accounts} setAccounts={setAccounts} />
             </section>
             <Footer />

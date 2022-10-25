@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.abe6919a.css",
-    "main.js": "/static/js/main.7aabbc92.js",
+    "main.css": "/static/css/main.433adf84.css",
+    "main.js": "/static/js/main.15beefef.js",
     "static/media/Atamo.mp3": "/static/media/Atamo.216a7b53ebeba04b204b.mp3",
-    "static/media/falling gif.gif": "/static/media/falling gif.fb4a9d158c65335b22c6.gif",
     "static/media/atamo dextop.png": "/static/media/atamo dextop.6d43423929860094d67d.png",
+    "static/media/falling gif.gif": "/static/media/falling gif.92782cfb0c74790adf34.gif",
     "static/media/futuristic.gif": "/static/media/futuristic.6f0cacc8465296dfd92a.gif",
     "static/media/angel.png": "/static/media/angel.cb60e2893b0167b7effb.png",
     "static/media/brand-icons.svg": "/static/media/brand-icons.6729d29753e000c17489.svg",
@@ -31,11 +31,11 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "static/media/medium.svg": "/static/media/medium.667169a9e27c24e908b76a89c7bb09ab.svg",
-    "main.abe6919a.css.map": "/static/css/main.abe6919a.css.map",
-    "main.7aabbc92.js.map": "/static/js/main.7aabbc92.js.map"
+    "main.433adf84.css.map": "/static/css/main.433adf84.css.map",
+    "main.15beefef.js.map": "/static/js/main.15beefef.js.map"
   },
   "entrypoints": [
-    "static/css/main.abe6919a.css",
-    "static/js/main.7aabbc92.js"
+    "static/css/main.433adf84.css",
+    "static/js/main.15beefef.js"
   ]
 }
