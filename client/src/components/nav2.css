@@ -1,26 +1,28 @@
-nav {
+.nav {
     position: absolute;
     display: flex;
     justify-content: space-between !important;
     align-items: center;
     left: 0;
     width: 100vw;
-    padding: 1em 0;
     z-index: 4;
     font-family: Impact, Encanto !important;
+    padding: 2em 1em !important;
 }
 
-nav ul {
+.nav ul {
     list-style: none;
     display: flex;
     justify-content: flex-end !important;
+    align-items: center;
+    width: 40%;
 }
 
-nav ul li {
+.nav ul li {
     font-size: 1.2em;
 }
 
-nav ul a {
+.nav ul a {
     font-size: 1em;
     margin: 0 1em;
     color: #fff;
@@ -28,79 +30,55 @@ nav ul a {
     text-decoration: none !important;
 }
 
+.nav ul a:hover {
+    color: #fff;
+}
+
 a {
     text-decoration: none !important;
 }
 
-footer ul.links {
-    margin-top: -.7em !important;
-}
 
-
-ul.links i {
-    color: rgb(255, 255, 255) !important;
+.nav ul.links2 svg {
     background-color: #dc4f2f;
     border-radius: 50%;
-    font-size: 1.5em !important;
-    aspect-ratio: 1;
+    width: 2.2em !important;
+    height: 2.2em !important;
+    margin: .5em 0;
     display: flex;
     align-items: center;
     padding: 6px;
+    border: 2px solid #000;
 }
 
-ul.links img {
-    background-color: #dc4f2f;
-    border-radius: 50%;
-    width: 2.6em !important;
-    height: 2.6em !important;
-    aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    padding: 6px;
-}
-
-nav .speaker-wrap {
+.nav .speaker-wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    margin-left: 3em;
+    width: 60% !important;
 }
 
 
-nav ul p {
+.nav ul p {
     margin: 0 !important;
 }
 
 
 @media screen and (max-width: 850px) {
-    nav {
+    .nav {
         width: 100vw !important;
-        flex-direction: column !important;
         justify-content: space-between !important;
-        align-items: flex-start !important;
-        box-shadow: unset !important;
+        align-items: center !important;
         overflow-x: hidden;
+        padding: 0.4em !important;
     }
 
-    nav ul {
-        min-width: 80 !important;
-        width: unset !important;
-        justify-content: space-between;
+    .nav .speaker-wrap {
+        width: 40% !important;
     }
 
-    nav .speaker-wrap {
-        width: 35vw !important;
-        margin-left: -2em !important;
-    }
-
-    nav .speaker-wrap i {
-        font-size: 1.3em !important;
-    }
-
-    nav ul.links {
-        width: 30vw;
-        margin-right: -2em !important;
+    .nav .speaker-wrap i {
+        font-size: 1em !important;
     }
 
 

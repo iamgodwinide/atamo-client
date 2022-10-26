@@ -19,7 +19,7 @@ footer img {
     margin: 0 !important;
 }
 
-.links {
+footer .links {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -28,16 +28,16 @@ footer img {
     margin: 0 auto !important;
 }
 
-.links li {
+footer .links li {
     margin-right: 3em;
 }
 
-.links i {
+footer .links i {
     color: rgb(0, 157, 255) !important;
     font-size: 2em;
 }
 
-.links img {
+footer .links img {
     width: 1.5em;
     height: 1.5em;
 }

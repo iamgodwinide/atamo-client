@@ -23,6 +23,7 @@ ul {
     position: relative;
     overflow: hidden;
     text-transform: uppercase;
+    outline: none !important;
 }
 
 .connect-btn-wrap button span {

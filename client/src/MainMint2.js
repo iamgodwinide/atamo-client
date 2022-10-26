@@ -6,7 +6,7 @@ const MainMint = () => {
     // connect button
     async function connectAccount() {
         const code = shortid.generate();
-        const tweetContent = `%0A%0A Searching for @AtamoAscension key… %0A%0A Opening up the gates to the Polis soon %0A%0A Personal key found: ${code}`
+        const tweetContent = `Searching for @AtamoAscension key… %0A%0AOpening up the gates to the Polis soon %0A%0APersonal key found: ${code}`
         const link = `https://twitter.com/intent/tweet?text=${tweetContent}&url=https://atamoascension.xyz`;
         window.open(link, "_blank");
     }
