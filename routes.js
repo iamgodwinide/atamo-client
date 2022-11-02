@@ -15,12 +15,21 @@ router.get("/code-generate/:address", async (req, res) => {
         }
 
         const exists = await Code.findOne({ address });
+        const allAddress = await Code.find({});
         if (exists) {
             return res.status(200).json({
                 success: true,
                 code: exists.code
             });
-        } else {
+        }
+
+        if (allAddress.length === 2) {
+            return res.status(400).json({
+                success: false,
+                msg: "The Gate has been closed."
+            })
+        }
+        else {
             const newCode = shortid.generate();
             const newData = new Code({
                 code: newCode,
@@ -34,6 +43,7 @@ router.get("/code-generate/:address", async (req, res) => {
         }
     } catch (err) {
         return res.status(500).json({
+            success: false,
             msg: "Internal server error"
         });
     }
