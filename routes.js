@@ -4,6 +4,37 @@ const Code = require("./model/Code");
 
 
 
+router.get("/puzzle/:answer", async (req, res) => {
+    try {
+        const { answer } = req.params;
+        if (!answer) {
+            return res.status(200).json({
+                success: false,
+                msg: "Please provide answer"
+            })
+        }
+
+        if (answer !== 'AtAsPoGaW') {
+            return res.status(200).json({
+                success: false,
+                msg: "wrong answer"
+            })
+        } else {
+            return res.status(200).json({
+                success: true,
+                msg: "correct"
+            })
+        }
+
+    } catch (err) {
+        return res.status(500).json({
+            success: false,
+            msg: "Internal server error"
+        });
+    }
+});
+
+
 router.get("/code-generate/:address", async (req, res) => {
     try {
         const { address } = req.params;
