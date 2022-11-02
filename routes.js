@@ -24,7 +24,7 @@ router.get("/code-generate/:address", async (req, res) => {
         }
 
         if (allAddress.length > 10) {
-            return res.status(400).json({
+            return res.status(200).json({
                 success: false,
                 msg: "The Gate has been closed."
             })
