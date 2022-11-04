@@ -22,7 +22,7 @@ ul {
     color: #fffefd;
     position: relative;
     overflow: hidden;
-    text-transform: uppercase;
+    text-transform: capitalize;
     outline: none !important;
 }
 

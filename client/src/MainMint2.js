@@ -24,7 +24,7 @@ const MainMint = () => {
                 <button color="btn btn-primary" onClick={connectAccount}>
                     <i class="fas fa-link"></i>
                     <span></span>
-                    {" "}Click To Ascend{" "}
+                    {" "}To The Gates Of Polis{" "}
                 </button>
             </div>
         </div>
