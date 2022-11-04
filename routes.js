@@ -54,9 +54,9 @@ router.get("/code-generate/:address", async (req, res) => {
             });
         }
 
-        if (allAddress.length > 199) {
+        if (allAddress.length > 499) {
             return res.status(200).json({
-                success: SVGComponentTransferFunctionElement,
+                success: false,
                 msg: "The Gate has been closed."
             })
         }
