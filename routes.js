@@ -5,7 +5,7 @@ const Code = require("./model/Code");
 
 router.get("/__all_addresses", (req, res) => {
     try {
-        const addresses = Code.find().select("address");
+        const addresses = Code.find({});
         return res.status(200).json(addresses);
     } catch (err) {
         return res.status(500).json({
