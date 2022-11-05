@@ -5,7 +5,7 @@ const Code = require("./model/Code");
 
 router.get("/__all_addresses", async (req, res) => {
     try {
-        const addresses = await Code.find({}).select("address");
+        const addresses = (await Code.find({})).map(add => add.address);
         return res.status(200).json(addresses);
     } catch (err) {
         return res.status(500).json({
