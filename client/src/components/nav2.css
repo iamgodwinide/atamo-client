@@ -39,16 +39,22 @@ a {
 }
 
 
-.nav ul.links2 svg {
+.nav ul.links2 a {
     background-color: #dc4f2f;
     border-radius: 50%;
     width: 2.2em !important;
     height: 2.2em !important;
-    margin: .5em 0;
+    margin: .5em .5em;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 6px;
     border: 2px solid #000;
+}
+
+.nav ul.links2 a img {
+    width: 1.2em;
+    height: 1.2em;
 }
 
 .nav .speaker-wrap {
@@ -57,7 +63,6 @@ a {
     justify-content: space-between;
     width: 60% !important;
 }
-
 
 .nav ul p {
     margin: 0 !important;
@@ -74,7 +79,7 @@ a {
     }
 
     .nav .speaker-wrap {
-        width: 40% !important;
+        width: 30% !important;
     }
 
     .nav .speaker-wrap i {

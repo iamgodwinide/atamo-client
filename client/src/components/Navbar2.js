@@ -27,8 +27,13 @@ const Navbar = ({ audio, muted, setMuted }) => {
                     </a>
                 </li>
                 <li>
-                    <a href="https://medium.com/@atamoascension/the-atamo-ascension-first-stop-98f52ae07f4e">
+                    <a href="https://medium.com/@atamoascension">
                         <MediumOutlined />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.premint.xyz/atamo-ascension/">
+                        <img src="/premint.svg" />
                     </a>
                 </li>
             </ul>
