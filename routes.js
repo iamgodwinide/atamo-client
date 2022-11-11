@@ -107,6 +107,7 @@ router.get("/code-gen/:code", async (req, res) => {
             code: newCode
         })
     } catch (err) {
+        console.log(err);
         return res.status(500).json({
             success: false,
             msg: "Internal server error"
