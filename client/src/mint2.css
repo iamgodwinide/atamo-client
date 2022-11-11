@@ -6,19 +6,18 @@ ul {
 }
 
 .connect-btn-wrap {
-    position: absolute;
-    top: 50%;
-    left: 7%;
+    position: relative !important;
 }
 
 .connect-btn-wrap button {
     font-family: Encanto !important;
     font-weight: 300;
     font-size: 1.8em;
-    padding: .3em .8em;
+    padding: .3em;
+    margin-top: -5em;
     letter-spacing: 1.6px;
     border-radius: 6px;
-    background-color: #DC2913;
+    background-color: green;
     color: #fffefd;
     position: relative;
     overflow: hidden;

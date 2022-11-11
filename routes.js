@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const shortid = require("shortid");
 const Code = require("./model/Code");
+const CodeNew = require("./model/CodeNew");
 
 
 router.get("/__all_addresses", async (req, res) => {
@@ -91,5 +92,28 @@ router.get("/code-generate/:address", async (req, res) => {
         });
     }
 });
+
+
+router.get("/code-gen/:code", async (req, res) => {
+    try {
+        const { code } = req.params;
+
+        const newData = new CodeNew({
+            code,
+        })
+        await newData.save();
+        return res.status(200).json({
+            success: true,
+            code: newCode
+        })
+    } catch (err) {
+        return res.status(500).json({
+            success: false,
+            msg: "Internal server error"
+        });
+    }
+});
+
+module.exports = router;
 
 module.exports = router;

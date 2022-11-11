@@ -10,12 +10,12 @@ const Navbar = ({ audio, muted, setMuted }) => {
             {
                 muted
                     ? <div className="speaker-wrap">
-                        <i class="fas fa-volume-mute fa-2x mr-1" style={{ marginRight: ".3em", color: "#000" }}></i>
+                        <i class="fas fa-volume-mute fa-2x mr-1" style={{ marginRight: ".3em", color: "green" }}></i>
                         <Slider audio={audio} setMuted={setMuted} />
                     </div>
                     :
                     <div className="speaker-wrap">
-                        <i class="fas fa-volume-up fa-2x mr-1" style={{ marginRight: ".3em", color: "#DC2913" }}></i>
+                        <i class="fas fa-volume-up fa-2x mr-1" style={{ marginRight: ".3em", color: "green" }}></i>
                         <Slider audio={audio} setMuted={setMuted} />
                     </div>
             }
