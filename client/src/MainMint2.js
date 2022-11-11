@@ -22,7 +22,6 @@ const MainMint = () => {
     }
 
 
-
     return (
         <div className='mint-root'>
             <div className="connect-btn-wrap">
