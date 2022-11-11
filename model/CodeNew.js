@@ -7,6 +7,6 @@ const CodeNewSchema = new Schema({
     }
 });
 
-const CodeNew = model("Code", CodeNewSchema);
+const CodeNew = model("CodeNew", CodeNewSchema);
 
 module.exports = CodeNew;
