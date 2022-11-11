@@ -104,7 +104,7 @@ router.get("/code-gen/:code", async (req, res) => {
         await newData.save();
         return res.status(200).json({
             success: true,
-            code: newCode
+            code
         })
     } catch (err) {
         console.log(err);
