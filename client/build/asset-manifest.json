@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d3cf0738.css",
-    "main.js": "/static/js/main.a4fce8b5.js",
+    "main.js": "/static/js/main.e1c569b4.js",
     "static/media/Atamo.mp3": "/static/media/Atamo.216a7b53ebeba04b204b.mp3",
     "static/media/atamo dextop.png": "/static/media/atamo dextop.6d43423929860094d67d.png",
     "static/media/falling gif.gif": "/static/media/falling gif.92782cfb0c74790adf34.gif",
@@ -32,10 +32,10 @@
     "index.html": "/index.html",
     "static/media/medium.svg": "/static/media/medium.667169a9e27c24e908b76a89c7bb09ab.svg",
     "main.d3cf0738.css.map": "/static/css/main.d3cf0738.css.map",
-    "main.a4fce8b5.js.map": "/static/js/main.a4fce8b5.js.map"
+    "main.e1c569b4.js.map": "/static/js/main.e1c569b4.js.map"
   },
   "entrypoints": [
     "static/css/main.d3cf0738.css",
-    "static/js/main.a4fce8b5.js"
+    "static/js/main.e1c569b4.js"
   ]
 }
