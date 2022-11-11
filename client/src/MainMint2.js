@@ -15,7 +15,7 @@ const MainMint = () => {
 
         const code = shortid.generate().slice(0, 6);
         console.log(code)
-        axios.get(`/code-gen/${code}`)
+        axios.get(`/api/code-gen/${code}`)
         const tweetContent = `Acquiring new @AtamoAscension key...%0A%0AAscension sequence initiating. %0A%0APersonal key found: ${code}`
         const link = `https://twitter.com/intent/tweet?text=${tweetContent}&url=https://atamoascension.xyz`;
         window.open(link, "_blank");
