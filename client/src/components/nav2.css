@@ -78,6 +78,13 @@ a {
         padding: 0.4em !important;
     }
 
+    .nav ul.links2 a {
+        width: 1.8em !important;
+        height: 1.8em !important;
+        margin: .3em .3em;
+        border: 1px solid #000;
+    }
+
     .nav .speaker-wrap {
         width: 30% !important;
     }

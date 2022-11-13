@@ -32,6 +32,11 @@ const Navbar = ({ audio, muted, setMuted }) => {
                     </a>
                 </li>
                 <li>
+                    <a href="https://discord.gg/atamoascension">
+                        <i className="fab fa-discord" />
+                    </a>
+                </li>
+                <li>
                     <a href="https://www.premint.xyz/atamo-ascension/">
                         <img src="/premint.svg" />
                     </a>

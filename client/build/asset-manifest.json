@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c4d197a4.css",
-    "main.js": "/static/js/main.ef526794.js",
+    "main.css": "/static/css/main.c73302be.css",
+    "main.js": "/static/js/main.bc2427b6.js",
     "static/media/Atamo.mp3": "/static/media/Atamo.216a7b53ebeba04b204b.mp3",
     "static/media/atamo dextop.png": "/static/media/atamo dextop.6d43423929860094d67d.png",
     "static/media/falling gif.gif": "/static/media/falling gif.92782cfb0c74790adf34.gif",
@@ -31,11 +31,11 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "static/media/medium.svg": "/static/media/medium.667169a9e27c24e908b76a89c7bb09ab.svg",
-    "main.c4d197a4.css.map": "/static/css/main.c4d197a4.css.map",
-    "main.ef526794.js.map": "/static/js/main.ef526794.js.map"
+    "main.c73302be.css.map": "/static/css/main.c73302be.css.map",
+    "main.bc2427b6.js.map": "/static/js/main.bc2427b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4d197a4.css",
-    "static/js/main.ef526794.js"
+    "static/css/main.c73302be.css",
+    "static/js/main.bc2427b6.js"
   ]
 }
