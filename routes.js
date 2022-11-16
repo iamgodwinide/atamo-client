@@ -18,7 +18,7 @@ router.get("/__all_addresses", async (req, res) => {
 
 router.get("/asahitrials/:answer/", async (req, res) => {
     try {
-        const { answer } = req.query;
+        const { answer } = req.params;
         if (answer.toLocaleLowerCase() === 'akira') {
             return res.status(200).json({
                 success: true
