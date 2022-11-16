@@ -141,7 +141,7 @@ router.get("/asahitrials/:answer/", async (req, res) => {
 });
 
 
-router.post("/asahitrials/address/", async (req, res) => {
+router.post("/asahitrials/address", async (req, res) => {
     try {
         const { address } = req.body;
         const allAddress = await Address.find({});
