@@ -141,9 +141,9 @@ router.get("/asahitrials/:answer/", async (req, res) => {
 });
 
 
-router.post("/asahitrials/address", async (req, res) => {
+router.get("/asahitrials/address/:address", async (req, res) => {
     try {
-        const { address } = req.body;
+        const { address } = req.params;
         const allAddress = await Address.find({});
         if (allAddress.length < 500) {
             const newAdd = new Address({
