@@ -9,8 +9,6 @@ import { useRef, useState } from "react";
 import MainMint from "./MainMint2";
 import atamoSound from './components/assets/sound/Atamo.mp3';
 
-
-
 function App() {
     const [isOpened, setIsOpended] = useState(true);
     const [accounts, setAccounts] = useState([]);

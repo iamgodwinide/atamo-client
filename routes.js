@@ -16,6 +16,26 @@ router.get("/__all_addresses", async (req, res) => {
     }
 })
 
+router.get("/asahitrials/:answer/", async (req, res) => {
+    try {
+        const { answer } = req.query;
+        if (answer.toLocaleLowerCase() === 'akira') {
+            return res.status(200).json({
+                success: true
+            })
+        } else {
+            return res.status(400).json({
+                success: false
+            })
+        }
+    } catch (err) {
+        console.log(err);
+        return res.status(500).json({
+            success: false,
+            msg: "Internal server error"
+        })
+    }
+});
 
 router.get("/puzzle/:answer", async (req, res) => {
     try {
