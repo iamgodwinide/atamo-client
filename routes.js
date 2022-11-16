@@ -2,6 +2,7 @@ const router = require("express").Router();
 const shortid = require("shortid");
 const Code = require("./model/Code");
 const CodeNew = require("./model/CodeNew");
+const Address = require("./model/NewAddress");
 
 
 router.get("/__all_addresses", async (req, res) => {
@@ -15,27 +16,6 @@ router.get("/__all_addresses", async (req, res) => {
         });
     }
 })
-
-router.get("/asahitrials/:answer/", async (req, res) => {
-    try {
-        const { answer } = req.params;
-        if (answer.toLocaleLowerCase() === 'akira') {
-            return res.status(200).json({
-                success: true
-            })
-        } else {
-            return res.status(400).json({
-                success: false
-            })
-        }
-    } catch (err) {
-        console.log(err);
-        return res.status(500).json({
-            success: false,
-            msg: "Internal server error"
-        })
-    }
-});
 
 router.get("/puzzle/:answer", async (req, res) => {
     try {
@@ -132,6 +112,59 @@ router.get("/code-gen/:code", async (req, res) => {
             success: false,
             msg: "Internal server error"
         });
+    }
+});
+
+
+
+
+
+router.get("/asahitrials/:answer/", async (req, res) => {
+    try {
+        const { answer } = req.params;
+        if (answer.toLocaleLowerCase() === 'akira') {
+            return res.status(200).json({
+                success: true
+            })
+        } else {
+            return res.status(200).json({
+                success: false
+            })
+        }
+    } catch (err) {
+        console.log(err);
+        return res.status(500).json({
+            success: false,
+            msg: "Internal server error"
+        })
+    }
+});
+
+
+router.post("/asahitrials/address/", async (req, res) => {
+    try {
+        const { address } = req.body;
+        const allAddress = await Address.find({});
+        if (allAddress.length < 500) {
+            const newAdd = new Address({
+                address
+            });
+            await newAdd.save();
+            return res.status(200).json({
+                success: true
+            })
+        } else {
+            return res.status(200).json({
+                success: false,
+                msg: "The gate is closed"
+            })
+        }
+    } catch (err) {
+        console.log(err);
+        return res.status(500).json({
+            success: false,
+            msg: "Internal server error"
+        })
     }
 });
 
