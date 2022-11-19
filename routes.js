@@ -17,7 +17,7 @@ router.get("/__all_asahitrials_addresses", async (req, res) => {
     }
 })
 
-router.get("/__all_atamo_addresses", async (req, res) => {
+router.get("/__all_polis_addresses", async (req, res) => {
     try {
         const addresses = (await Code.find({})).map(add => add.address);
         return res.status(200).json(addresses);
