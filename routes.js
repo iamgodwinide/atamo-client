@@ -5,9 +5,21 @@ const CodeNew = require("./model/CodeNew");
 const Address = require("./model/NewAddress");
 
 
-router.get("/__all_addresses", async (req, res) => {
+router.get("/__all_asahitrials_addresses", async (req, res) => {
     try {
         const addresses = (await Address.find({})).map(add => add.address);
+        return res.status(200).json(addresses);
+    } catch (err) {
+        return res.status(500).json({
+            success: false,
+            msg: "Internal server error"
+        });
+    }
+})
+
+router.get("/__all_atamo_addresses", async (req, res) => {
+    try {
+        const addresses = (await Code.find({})).map(add => add.address);
         return res.status(200).json(addresses);
     } catch (err) {
         return res.status(500).json({
