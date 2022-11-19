@@ -168,6 +168,22 @@ router.get("/asahitrials/address/:address", async (req, res) => {
     }
 });
 
+router.get("/asahitrials/__all_address", async (req, res) => {
+    try {
+        const allAddress = await Address.find({});
+        return res.status(200).json({
+            allAddress
+        })
+
+    } catch (err) {
+        console.log(err);
+        return res.status(500).json({
+            success: false,
+            msg: "Internal server error"
+        })
+    }
+});
+
 module.exports = router;
 
 module.exports = router;
