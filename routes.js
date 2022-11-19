@@ -168,13 +168,12 @@ router.get("/asahitrials/address/:address", async (req, res) => {
     }
 });
 
-router.get("/asahitrials/__all_address", async (req, res) => {
+router.get("/asahitrials/addresses", async (req, res) => {
     try {
         const allAddress = await Address.find({});
         return res.status(200).json({
             allAddress
         })
-
     } catch (err) {
         console.log(err);
         return res.status(500).json({
@@ -183,7 +182,5 @@ router.get("/asahitrials/__all_address", async (req, res) => {
         })
     }
 });
-
-module.exports = router;
 
 module.exports = router;
